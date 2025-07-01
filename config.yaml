@@ -1,0 +1,7 @@
+twilio:
+  sid: "ACxxx"
+  token: "xxxx"
+  from: "+1415..."
+
+mensagens:
+  chamada: "Chegou a sua vez! Dirija-se ao guichê."

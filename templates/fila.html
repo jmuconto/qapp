@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fila</title>
+  <script src="https://unpkg.com/htmx.org"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <h1 class="text-xl font-bold mb-4">Gestão de Fila</h1>
+
+  <form hx-post="/add" hx-trigger="submit" class="mb-4">
+    <input name="numero" type="text" placeholder="+258..." class="border p-2 mr-2">
+    <button class="bg-blue-500 text-white px-4 py-2">Adicionar</button>
+  </form>
+
+  <div id="resultado" hx-post="/next" hx-trigger="every 5s" hx-swap="innerHTML">
+    <p>Esperando próximo...</p>
+  </div>
+</body>
+</html>
