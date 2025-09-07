@@ -1,30 +1,44 @@
-# qApp – Queue Management SaaS via WhatsApp/SMS
+# qApp – Queue Management SaaS via Email
 
-**qApp** is a minimalist open-source platform for queue management with client interaction via SMS and WhatsApp. Designed for banks, clinics, government services, restaurants, and more.
+**qApp** is a minimalist, open-source queue management platform that enables businesses to interact with clients through **email**. Perfectly suited for **banks, clinics, government offices, restaurants**, and more, qApp simplifies the queueing experience for both staff and customers.  
+
+---
 
 ## 🚀 Features
 
-- Attendant dashboard for managing queues (pause, call next, switch, cancel, add)
-- Manager/admin dashboard with analytics and settings
-- Customizable messages via Twilio (SMS/WhatsApp)
-- Real-time interactions using HTMX
-- Pay-as-you-go model and support for dedicated/custom deployments
+- **Attendant Dashboard**  
+  Manage queues efficiently: pause, call next, switch, cancel, or add clients.  
+
+- **Manager/Admin Dashboard**  
+  Access analytics, track performance, and configure settings.  
+
+- **Customizable Email Notifications**  
+  Send automated notifications via **email**, fully configurable per organization.  
+
+- **Real-Time Interactions**  
+  Powered by **HTMX**, allowing dynamic updates without full page reloads.  
+
+- **Flexible Deployment & Pricing**  
+  Supports a **pay-as-you-go model**, dedicated deployments, or local server setups.  
+
+---
 
 ## 🧱 Tech Stack
 
-- **Backend**: FastAPI (Python)
-- **Frontend**: HTMX + Tailwind CSS
-- **Automation**: n8n for workflows and background jobs
-- **Messaging**: Twilio (SMS & WhatsApp)
-- **Database**: SQLite (for local/testing), pluggable with Postgres
-- **Deployment**: Designed to be container-ready or simple local server
+| Layer       | Technology                              |
+|------------|----------------------------------------|
+| Backend    | FastAPI (Python)                        |
+| Frontend   | HTMX + Tailwind CSS                     |
+| Automation | n8n for workflows and background jobs   |
+| Messaging  | Email (SMTP or service like SendGrid)   |
+| Database   | SQLite (for local/testing), pluggable with Postgres |
+| Deployment | Container-ready or simple local server |
 
-## ⚙️ Local Development
+---
 
-```bash
-git clone git@gitlab.com:YOUR_USERNAME/qapp.git
-cd qapp
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app:app --reload
+### Why qApp?
+
+- Lightweight, minimal, and open-source.  
+- Enables organizations to manage queues digitally without heavy infrastructure.  
+- Fast and flexible—works on both small setups and enterprise deployments.  
+- Easy integration with email ensures clients are notified in real time.
